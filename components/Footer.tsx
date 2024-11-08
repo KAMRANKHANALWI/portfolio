@@ -2,6 +2,7 @@ import React from "react";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -11,7 +12,8 @@ const Footer = () => {
           Get in <span className="text-purple"> touch!</span>
         </h1>
         <p className=" my-5 text-center text-sm text-gray-400">
-          If not now, then when? I promise I’m friendly... unless you’re a typo in my code. 😄
+          If not now, then when? I promise I’m friendly... unless you’re a typo
+          in my code. 😄
         </p>
 
         <div className="max-w-2xl mx-auto px-6 py-12 bg-gray-50 rounded-lg shadow-lg text-center mb-4 lg:mb-2">
@@ -61,7 +63,14 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="w-10 h-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 cursor-pointer"
             >
-              <img src={info.img} alt="icon" width={20} height={20} />
+              {/* <img src={info.img} alt="icon" width={20} height={20} /> */}
+              <Image
+                src={info.img}
+                alt="icon"
+                width={20}
+                height={20}
+                priority  
+              />
             </a>
           ))}
         </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import { FlipWords } from "./ui/FlipWords";
@@ -25,21 +24,19 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-16 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          {/* <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
-          </h2> */}
-
           <h1 className="font-bold text-center text-[40px] md:text-5xl lg:text-6xl">
             Hi, I&apos;m Kamran Khan Alwi
             <br></br>
-            
             <FlipWords
               className="text-center text-[40px] md:text-5xl mb-8 lg:text-6xl lg:mt-8 "
               words={["Full Stack Developer", "Reader", "Wanderer"]}
               duration={3000}
             />
           </h1>
-          <a href="https://drive.google.com/file/d/1x4UJmuRJzNQ5f3fM45ritPCpF5rF1A8e/view" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1x4UJmuRJzNQ5f3fM45ritPCpF5rF1A8e/view"
+            target="_blank"
+          >
             <MagicButton
               title="Resume"
               icon={<FaLocationArrow />}

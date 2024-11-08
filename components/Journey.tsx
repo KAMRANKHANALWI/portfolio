@@ -51,7 +51,9 @@ const timelineData: TimelineEntry[] = [
     title: "2023 - Backend and Frontend Development",
     content: (
       <div>
-        <h1 className="lg:text-2xl text-xl font-semibold mb-2">Uber - Cab Booking App:</h1>
+        <h1 className="lg:text-2xl text-xl font-semibold mb-2">
+          Uber - Cab Booking App:
+        </h1>
         <ul className="list-disc pl-6 mb-4">
           <li>
             Built a scalable backend with Spring Boot, implemented secure
@@ -66,7 +68,9 @@ const timelineData: TimelineEntry[] = [
             controls using the MERN stack, enhancing user engagement.
           </li>
         </ul>
-        <h1 className="lg:text-2xl text-xl font-semibold mb-2">Electronics-Store:</h1>
+        <h1 className="lg:text-2xl text-xl font-semibold mb-2">
+          Electronics-Store:
+        </h1>
         <ul className="list-disc pl-6">
           <li>
             Developed an e-commerce site with product management and secure

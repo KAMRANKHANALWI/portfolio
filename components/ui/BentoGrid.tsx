@@ -82,17 +82,16 @@ export const BentoGridItem = ({
             </p>
 
             <p className="leading-relaxed">
-              When I’m not coding, you can find me immersed in novels, exploring
-              literature worlds, and drawing inspiration from stories that fuel
-              my creativity.
+              When I&apos;m not coding, you can find me immersed in novels,
+              exploring literature worlds, and drawing inspiration from stories
+              that fuel my creativity.
             </p>
 
             <p className="leading-relaxed">
-              I love exploring the city, uncovering hidden gems, and
-              finding quirky spots that add a little extra charm to my day. It’s
-              my way of recharging, resetting, and gaining fresh
-              perspectives—like finding little adventures between the lines of
-              code. 🌍✨
+              I love exploring the city, uncovering hidden gems, and finding
+              quirky spots that add a little extra charm to my day. It&apos;s my
+              way of recharging, resetting, and gaining fresh perspectives—like
+              finding little adventures between the lines of code. 🌍✨
             </p>
           </div>
         </div>
