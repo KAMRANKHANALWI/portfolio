@@ -26,20 +26,12 @@ export const BentoGridItem = ({
   className,
   id,
   title,
-  description,
-  img,
-  imgClassName,
   titleClassName,
-  spareImg,
 }: {
   className?: string;
   id: number;
   title?: string | React.ReactNode;
-  description?: string | React.ReactNode;
-  img?: string;
-  imgClassName?: string;
   titleClassName?: string;
-  spareImg?: string;
 }) => {
   return (
     <div
@@ -74,11 +66,11 @@ export const BentoGridItem = ({
 
           <div className="font-sans md:text-lg lg:text-xl text-justify max-w-[80vw] md:max-w-[70vw] lg:max-w-[60vw] mx-auto px-4 py-6 space-y-6">
             <p className="leading-relaxed">
-              I'm a full-stack web developer with a strong foundation in HTML,
+              I&apos;m a full-stack web developer with a strong foundation in HTML,
               CSS, JavaScript, TypeScript, and frameworks like React.js, and
               Next.js. My journey into web development began with a curiosity
               about JavaScript, which soon grew into a passion for building
-              stuff that solves problems and adds value to people's daily lives!
+              stuff that solves problems and adds value to people&apos;s lives!
             </p>
 
             <p className="leading-relaxed">
