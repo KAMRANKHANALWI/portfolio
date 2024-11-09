@@ -240,7 +240,18 @@ export const BackgroundGradientAnimation = ({
     document.body.style.setProperty("--pointer-color", pointerColor);
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  }, [
+    gradientBackgroundStart,
+    gradientBackgroundEnd,
+    firstColor,
+    secondColor,
+    thirdColor,
+    fourthColor,
+    fifthColor,
+    pointerColor,
+    size,
+    blendingValue,
+  ]);
 
   const animateMove = () => {
     setCurX(curX + (tgX - curX) / 20);
@@ -256,7 +267,7 @@ export const BackgroundGradientAnimation = ({
   useEffect(() => {
     animationFrame.current = requestAnimationFrame(animateMove);
     return () => cancelAnimationFrame(animationFrame.current!);
-  }, [tgX, tgY]);
+  }, [animateMove, tgX, tgY]);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (interactiveRef.current) {
@@ -304,8 +315,7 @@ export const BackgroundGradientAnimation = ({
         )}
       >
         {/* Gradient Circles */}
-        {/* [Include your div elements for each gradient circle with animations and classes here] */}
-        //{" "}
+        {/* Include your div elements for each gradient circle with animations and classes here */}
         <div
           className={cn(
             `absolute [background:radial-gradient(circle_at_center,_var(--first-color)_0,_var(--first-color)_50%)_no-repeat]`,
